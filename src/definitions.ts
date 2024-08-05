@@ -1,3 +1,18 @@
+/// <reference types="@capacitor/cli" />
+
+declare module '@capacitor/cli' {
+  export interface PluginsConfig {
+    SunmiPrinterPlugin?: {
+      /**
+       * Auto bind the print service on app load
+       *
+       * @default true
+       */
+      bindOnLoad?: boolean;
+    };
+  }
+}
+
 export interface SunmiPrinterPluginPlugin {
   /**
    * bind print service
